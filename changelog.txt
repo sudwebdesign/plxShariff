@@ -1,0 +1,15 @@
+plxShariff permet aux utilisateurs du site web de partager dans les grands réseaux sociaux sans être pisté par eux. http://ct.de/-2467514
+
+## Todo ##
+Téléchargement au "onfocus" du selecteur des catégories Flattr (ajax?)
+
+
+## Version 1.0.0 (20/02/2017) ##
+version initiale
+[+] Shariff Frontend JS 1.24.1 
+[+] Shariff Backend PHP 6.0.0 (php.5.6+ peut être 5.5?) [version 5.2.3 pour php.5.5 testé ci-jointe (au cas ou)]
+[+] Ajouts des options Frontend/Backend, de l'aide et des infos (j'me suis amusé, des popups full css, ...)
+[+] Traduction (semi-auto) des Articles du magazine web C'T pour la page info (ptet un peu trop)
+[+] Tests et essais avec php.5.5.6 ça roule (backends NoOk chez free en php.5.1.6, old backend joints (zip) pour ce que ça interresse voir si ça tourne )
+
+Dérivé de MySocialButtons 1.5

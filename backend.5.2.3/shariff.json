@@ -1,0 +1,20 @@
+{
+	"cache": {
+		"ttl": 60
+	},
+	"domains": [
+		"www.heise.de",
+		"www.ct.de"
+	],
+	"services": [
+		"GooglePlus",
+		"Facebook",
+		"LinkedIn",
+		"Reddit",
+		"StumbleUpon",
+		"Flattr",
+		"Pinterest",
+		"Xing",
+		"AddThis"
+	]
+}

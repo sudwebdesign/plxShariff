@@ -1,0 +1,796 @@
+/*!
+ * shariff - v1.24.1 - 17.11.2016
+ * https://github.com/heiseonline/shariff
+ * Copyright (c) 2016 Ines Pauer, Philipp Busse, Sebastian Hilbig, Erich Kramer, Deniz Sesli
+ * Licensed under the MIT license
+ * converted by https://www.css2scss.com/
+ */
+$color_1: #fff;
+$color_2: #333;
+$color_3: #999;
+$color_4: #f8694d;
+$color_5: #183a75;
+$color_6: #3b5998;
+$color_7: #d56308;
+$color_8: #648141;
+$color_9: #F67C1A;
+$color_10: #a31601;
+$color_11: #d34836;
+$color_12: #666;
+$color_13: #004785;
+$color_14: #0077b5;
+$color_15: #bd081c;
+$color_16: #ff4500;
+$color_17: #eb4924;
+$color_18: #0174a4;
+$color_19: #55acee;
+$color_20: #5cbe4a;
+$color_21: #15686a;
+$color_22: #126567;
+$color_23: #F56770;
+$color_24: #26ACE0;
+$color_25: #2B82D9;
+$font_family_1: Arial,Helvetica,sans-serif;
+$background_color_1: #b0b0b0;
+$background_color_2: #ccc;
+$background_color_3: #fff;
+$background_color_4: #eee;
+$background_color_5: #f8694d;
+$background_color_6: #f75b44;
+$background_color_7: #f1b8b0;
+$background_color_8: #999;
+$background_color_9: #b3b3b3;
+$background_color_10: #3b5998;
+$background_color_11: #4273c8;
+$background_color_12: #99adcf;
+$background_color_13: #7ea352;
+$background_color_14: #F67C1A;
+$background_color_15: #fab47c;
+$background_color_16: #b0c893;
+$background_color_17: #d34836;
+$background_color_18: #eda79d;
+$background_color_19: #efefef;
+$background_color_20: #0077b5;
+$background_color_21: #0369a0;
+$background_color_22: #33AAE8;
+$background_color_23: #a8a8a8;
+$background_color_24: #bd081c;
+$background_color_25: #d50920;
+$background_color_26: #ff4500;
+$background_color_27: #ff6a33;
+$background_color_28: #eb4924;
+$background_color_29: #ef7053;
+$background_color_30: #55acee;
+$background_color_31: #32bbf5;
+$background_color_32: #96D4EE;
+$background_color_33: #5cbe4a;
+$background_color_34: #34af23;
+$background_color_35: #126567;
+$background_color_36: #29888a;
+$background_color_37: #4fa5a7;
+$background_color_38: #36465D;
+$background_color_39: #44546B;
+$background_color_40: #333;
+$background_color_41: #1f1f1f;
+$background_color_42: #F56770;
+$background_color_43: #FA7F8A;
+$background_color_44: #26ACE0;
+$background_color_45: #38BBEB;
+$background_color_46: #2B82D9;
+$background_color_47: #398FE6;
+
+.shariff {
+	&::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	&::before {
+		content: " ";
+		display: table;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		height: 35px;
+		box-sizing: border-box;
+		overflow: hidden;
+		a {
+			color: $color_1;
+			position: relative;
+			display: block;
+			height: 35px;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+		.share_count {
+			font-family: $font_family_1;
+			font-size: 12px;
+			vertical-align: middle;
+			line-height: 35px;
+			padding: 0 8px;
+			height: 33px;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+		}
+		.share_text {
+			font-family: $font_family_1;
+			font-size: 12px;
+			vertical-align: middle;
+			line-height: 35px;
+		}
+		.fa {
+			width: 35px;
+			line-height: 35px;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	.orientation-horizontal {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		li {
+			-webkit-box-flex: 1;
+			float: left;
+			-ms-flex: none;
+			flex: none;
+			width: 35px;
+			margin-right: 3%;
+			margin-bottom: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.share_text {
+				display: block;
+				text-indent: -9999px;
+				padding-left: 3px;
+			}
+			.share_count {
+				display: none;
+			}
+		}
+		.info {
+			-webkit-box-flex: 0;
+		}
+	}
+	.theme-grey {
+		.shariff-button {
+			a {
+				background-color: $background_color_1;
+			}
+			.share_count {
+				background-color: $background_color_2;
+				color: $color_2;
+			}
+		}
+		.info {
+			a {
+				background-color: $background_color_3;
+				&:hover {
+					background-color: $background_color_19;
+				}
+			}
+		}
+	}
+	.theme-white {
+		.shariff-button {
+			border: 1px solid #ddd;
+			a {
+				background-color: $background_color_3;
+				&:hover {
+					background-color: $background_color_4;
+				}
+			}
+			.share_count {
+				background-color: $background_color_3;
+				color: $color_3;
+			}
+		}
+		.addthis {
+			a {
+				color: $color_4;
+			}
+		}
+		.diaspora {
+			a {
+				color: $color_3;
+			}
+		}
+		.facebook {
+			a {
+				color: $color_6;
+			}
+		}
+		.flattr {
+			a {
+				color: $color_9;
+			}
+		}
+		.googleplus {
+			a {
+				color: $color_11;
+			}
+		}
+		.linkedin {
+			a {
+				color: $color_14;
+			}
+		}
+		.mail {
+			a {
+				color: $color_3;
+			}
+		}
+		.pinterest {
+			a {
+				color: $color_15;
+			}
+		}
+		.reddit {
+			a {
+				color: $color_16;
+			}
+		}
+		.stumbleupon {
+			a {
+				color: $color_17;
+			}
+		}
+		.twitter {
+			a {
+				color: $color_19;
+			}
+		}
+		.whatsapp {
+			a {
+				color: $color_20;
+			}
+		}
+		.xing {
+			a {
+				color: $color_22;
+			}
+		}
+		.tumblr {
+			a {
+				color: $color_20;
+			}
+		}
+		.threema {
+			a {
+				color: $color_2;
+			}
+		}
+		.weibo {
+			a {
+				color: $color_23;
+			}
+		}
+		.tencent-weibo {
+			a {
+				color: $color_24;
+			}
+		}
+		.qzone {
+			a {
+				color: $color_25;
+			}
+		}
+	}
+	.orientation-vertical {
+		min-width: 110px;
+		li {
+			display: block;
+			width: 100%;
+			margin: 5px 0;
+			.share_count {
+				width: 24px;
+				text-align: right;
+			}
+		}
+		.info {
+			width: 35px;
+			float: right;
+		}
+	}
+	.addthis {
+		a {
+			background-color: $background_color_5;
+			&:hover {
+				background-color: $background_color_6;
+			}
+		}
+		.fa-plus {
+			font-size: 14px;
+		}
+		.share_count {
+			color: $color_4;
+			background-color: $background_color_7;
+		}
+	}
+	.diaspora {
+		a {
+			background-color: $background_color_8;
+			&:hover {
+				background-color: $background_color_9;
+			}
+		}
+		.fa-times-circle {
+			font-size: 17px;
+		}
+	}
+	.facebook {
+		a {
+			background-color: $background_color_10;
+			&:hover {
+				background-color: $background_color_11;
+			}
+		}
+		.fa-facebook {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_5;
+			background-color: $background_color_12;
+		}
+	}
+	.flattr {
+		a {
+			background-color: $background_color_13;
+			&:hover {
+				background-color: $background_color_14;
+				.share_count {
+					color: $color_7;
+					background-color: $background_color_15;
+				}
+			}
+		}
+		.fa-money {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_8;
+			background-color: $background_color_16;
+		}
+	}
+	.googleplus {
+		a {
+			background-color: $background_color_17;
+			&:hover {
+				background-color: $background_color_6;
+			}
+		}
+		.fa-google-plus {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_10;
+			background-color: $background_color_18;
+		}
+	}
+	.info {
+		border: 1px solid #ccc;
+		a {
+			color: $color_12;
+			background-color: $background_color_3;
+			&:hover {
+				background-color: $background_color_19;
+			}
+		}
+		.fa-info {
+			font-size: 20px;
+			width: 33px;
+		}
+		.share_text {
+			display: block !important;
+			text-indent: -9999px !important;
+		}
+	}
+	.linkedin {
+		a {
+			background-color: $background_color_20;
+			&:hover {
+				background-color: $background_color_21;
+			}
+		}
+		.fa-linkedin {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_13;
+			background-color: $background_color_22;
+		}
+	}
+	.mail {
+		a {
+			background-color: $background_color_8;
+			&:hover {
+				background-color: $background_color_23;
+			}
+		}
+		.fa-envelope {
+			font-size: 21px;
+		}
+	}
+	.pinterest {
+		a {
+			background-color: $background_color_24;
+			&:hover {
+				background-color: $background_color_25;
+			}
+		}
+		.fa-pinterest-p {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_10;
+			background-color: $background_color_18;
+		}
+	}
+	.reddit {
+		a {
+			background-color: $background_color_26;
+			&:hover {
+				background-color: $background_color_27;
+			}
+		}
+		.fa-reddit {
+			font-size: 17px;
+		}
+	}
+	.stumbleupon {
+		a {
+			background-color: $background_color_28;
+			&:hover {
+				background-color: $background_color_29;
+			}
+		}
+		.fa-stumbleupon {
+			font-size: 17px;
+		}
+	}
+	.twitter {
+		a {
+			background-color: $background_color_30;
+			&:hover {
+				background-color: $background_color_31;
+			}
+		}
+		.fa-twitter {
+			font-size: 28px;
+		}
+		.share_count {
+			color: $color_18;
+			background-color: $background_color_32;
+		}
+	}
+	.whatsapp {
+		a {
+			background-color: $background_color_33;
+			&:hover {
+				background-color: $background_color_34;
+			}
+		}
+		.fa-whatsapp {
+			font-size: 28px;
+		}
+	}
+	.xing {
+		a {
+			background-color: $background_color_35;
+			&:hover {
+				background-color: $background_color_36;
+			}
+		}
+		.fa-xing {
+			font-size: 22px;
+		}
+		.share_count {
+			color: $color_21;
+			background-color: $background_color_37;
+		}
+	}
+	.tumblr {
+		a {
+			background-color: $background_color_38;
+			&:hover {
+				background-color: $background_color_39;
+			}
+		}
+		.fa-tumblr {
+			font-size: 28px;
+		}
+	}
+	.threema {
+		a {
+			background-color: $background_color_40;
+			&:hover {
+				background-color: $background_color_41;
+			}
+		}
+		.fa-lock {
+			font-size: 28px;
+		}
+	}
+	.weibo {
+		a {
+			background-color: $background_color_42;
+			&:hover {
+				background-color: $background_color_43;
+			}
+		}
+		.fa-weibo {
+			font-size: 28px;
+		}
+		.share_count {
+			color: $color_18;
+			background-color: $background_color_42;
+		}
+	}
+	.tencent-weibo {
+		a {
+			background-color: $background_color_44;
+			&:hover {
+				background-color: $background_color_45;
+			}
+		}
+		.fa-tencent-weibo {
+			font-size: 28px;
+		}
+		.share_count {
+			color: $color_18;
+			background-color: $background_color_44;
+		}
+	}
+	.qzone {
+		a {
+			background-color: $background_color_46;
+			&:hover {
+				background-color: $background_color_47;
+			}
+		}
+		.fa-qq {
+			font-size: 28px;
+		}
+		.share_count {
+			color: $color_18;
+			background-color: $background_color_46;
+		}
+	}
+}
+@media only screen and (min-width:360px) {
+	.shariff {
+		.orientation-horizontal {
+			li {
+				margin-right: 1.8%;
+				min-width: 80px;
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
+				.share_count {
+					display: block;
+				}
+			}
+			.info {
+				-ms-flex: none !important;
+				flex: none !important;
+				width: 35px;
+				min-width: 35px !important;
+			}
+		}
+		.orientation-horizontal.col-1 {
+			li {
+				min-width: 110px;
+				max-width: 160px;
+				.share_text {
+					text-indent: 0;
+					display: inline;
+				}
+			}
+		}
+		.orientation-horizontal.col-2 {
+			li {
+				min-width: 110px;
+				max-width: 160px;
+				.share_text {
+					text-indent: 0;
+					display: inline;
+				}
+			}
+		}
+		.orientation-horizontal.col-5 {
+			li {
+				-ms-flex: none;
+				flex: none;
+			}
+		}
+		.orientation-horizontal.col-6 {
+			li {
+				-ms-flex: none;
+				flex: none;
+			}
+		}
+	}
+}
+@media only screen and (min-width:640px) {
+	.shariff {
+		.orientation-horizontal.col-3 {
+			li {
+				min-width: 110px;
+				max-width: 160px;
+				.share_text {
+					text-indent: 0;
+					display: inline;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:768px) {
+	.shariff {
+		.orientation-horizontal {
+			li {
+				min-width: 110px;
+				max-width: 160px;
+				.share_text {
+					text-indent: 0;
+					display: inline;
+				}
+			}
+		}
+		.orientation-horizontal.col-5 {
+			li {
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
+			}
+		}
+		.orientation-horizontal.col-6 {
+			li {
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
+			}
+		}
+	}
+}
+@media only screen and (min-width:1024px) {
+	.shariff {
+		li {
+			height: 30px;
+			a {
+				height: 30px;
+			}
+			.fa {
+				width: 30px;
+				line-height: 30px;
+			}
+			.share_count {
+				line-height: 30px;
+				height: 28px;
+			}
+			.share_text {
+				line-height: 30px;
+			}
+		}
+		.info {
+			.fa-info {
+				font-size: 16px;
+				width: 23px;
+			}
+		}
+		.orientation-horizontal {
+			.info {
+				width: 25px;
+				min-width: 25px !important;
+			}
+		}
+		.orientation-vertical {
+			.info {
+				width: 25px;
+			}
+		}
+	}
+}
+@media only screen and (min-width:600px) {
+	.shariff {
+		.addthis {
+			.fa-plus {
+				font-size: 14px;
+				position: relative;
+				top: 1px;
+			}
+		}
+		.diaspora {
+			.fa-times-circle {
+				font-size: 16px;
+			}
+		}
+		.facebook {
+			.fa-facebook {
+				font-size: 19px;
+			}
+		}
+		.flattr {
+			.fa-money {
+				font-size: 19px;
+			}
+		}
+		.googleplus {
+			.fa-google-plus {
+				font-size: 19px;
+			}
+		}
+		.linkedin {
+			.fa-linkedin {
+				font-size: 19px;
+			}
+		}
+		.mail {
+			.fa-envelope {
+				font-size: 18px;
+			}
+		}
+		.pinterest {
+			.fa-pinterest-p {
+				font-size: 19px;
+				position: relative;
+				top: 1px;
+			}
+		}
+		.reddit {
+			.fa-reddit {
+				font-size: 16px;
+			}
+		}
+		.stumbleupon {
+			.fa-stumbleupon {
+				font-size: 16px;
+			}
+		}
+		.twitter {
+			.fa-twitter {
+				font-size: 24px;
+			}
+		}
+		.whatsapp {
+			.fa-whatsapp {
+				font-size: 22px;
+			}
+		}
+		.xing {
+			.fa-xing {
+				font-size: 19px;
+			}
+		}
+		.tumblr {
+			.fa-tumblr {
+				font-size: 22px;
+			}
+		}
+		.threema {
+			.fa-lock {
+				font-size: 22px;
+			}
+		}
+		.weibo {
+			.fa-weibo {
+				font-size: 24px;
+			}
+		}
+		.tencent-weibo {
+			.fa-tencent-weibo {
+				font-size: 24px;
+			}
+		}
+		.qzone {
+			.fa-qq {
+				font-size: 24px;
+			}
+		}
+	}
+}

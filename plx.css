@@ -1,0 +1,154 @@
+a.fixed-info:hover {
+ opacity:1 !important;
+ background: #76848d url("../../plugins/plxShariff/info_shariff.png") no-repeat;
+ background-position:center;
+ background-size:cover;
+}
+a.fixed-info:hover,a.toplink:hover {
+ -webkit-transform: rotate(360deg) scale(1.005) skew(0deg) translate(0px);
+ -moz-transform: rotate(360deg) scale(1.005) skew(0deg) translate(0px);
+ -ms-transform: rotate(360deg) scale(1.005) skew(0deg) translate(0px);
+ -o-transform: rotate(360deg) scale(1.005) skew(0deg) translate(0px);
+ transform: rotate(360deg) scale(1.005) skew(0deg) translate(0px);
+}
+a.fixed-info {
+ transition: all 0.5s;
+ outline: none;
+ position: fixed; 
+ bottom: 2.618em;
+ right:0.1em;
+ z-index:1;
+ background: #43515a url("../../plugins/plxShariff/info.png") no-repeat;
+ background-position:center;
+ background-size:cover;
+ border-radius: 100%;
+ /*font-size: 1em;*/
+ color: transparent;
+ text-decoration: none;
+ padding: 0 0.67em;
+ height: 3.1em;
+ width: 3.1em;
+ line-height: 45px;
+ opacity: 0.618;
+ -webkit-border-radius: 100%;
+ -moz-border-radius: 100%;
+ border-radius: 100%;
+/* -webkit-transform-origin:100% 100%;
+ -moz-transform-origin:100% 100%;
+ transform-origin:100% 100%;*/
+}
+/* overide */
+h4.in-action-bar{
+ margin-top: 0.6em;
+ padding-left: 60%;
+}
+sup{
+ position: static;
+}
+/* popup css box */
+.box {
+ margin: 0 auto;
+ padding: 35px 1px;
+ background-clip: padding-box;
+}
+.overlay {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ visibility: hidden;
+ z-index: -2;
+ opacity: 0;
+ background: rgba(0, 0, 0, 0.7);
+ transition: all 0.5s ease; 
+/* transition: z-index 0.1s,
+             visibility 0.5s,
+             opacity 0.3s;
+*/
+}
+.overlay:target {
+ visibility: visible;
+ z-index: 100000;/* 99999 .in-action-bar */
+ opacity: 1;
+ width:100%;
+ height:100%;
+}
+.popup, .section {
+ background: #fff url("../../plugins/plxShariff/shariff_watermark.png") no-repeat;
+ background-position: 96% 100%;/* right bottom */
+ background-size:33%;
+ /*background-attachment:fixed;*/
+}
+ .action-bar {
+ background: #fff url("../../plugins/plxShariff/shariff_watermark.png") no-repeat;
+ background-position: 72% 100%;
+ background-size:12%;
+}
+.popup {
+ position: relative;
+ margin: 2em auto;
+ padding: 20px;
+ border-radius: 5px;
+ width: 90%;
+ height: 90%;
+ transition: all 5s ease-in-out;
+}
+.popup h2, .popup h4 {
+ margin: 0;
+ color: #000;
+ font-size: 123%
+}
+.popup .close {
+ position: absolute;
+ top: -10px;
+ right: 0px;
+ padding: 0 2px;
+ color: #aeaeae;
+ font-size: 30px;
+ font-weight: bold;
+ line-height: 20px;
+ text-decoration: none;
+ background-color: #fff;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -moz-transition: all 200ms;
+ -webkit-transition: all 200ms;
+ transition: all 200ms;
+}
+.popup .close:hover {
+ color: #969696;
+}
+.popup .content {
+ max-height: 90%;
+ overflow: auto;
+}
+/* fi popup css box */
+.toplink{
+ position:absolute;
+ top: 20px;
+ left: 20px;
+ transition: all 0.5s;
+}
+label > b:nth-child(1){
+ cursor:help;
+}
+img.logo{width:6.18em;vertical-align:middle;}
+.help-title{font-size:1.3em;font-weight:bold;padding:0;}
+.help-pre{font-size:12px; padding-left:2em;}
+#id_services{
+ width: 100%;
+}
+@media (max-width: 767px) {
+ h4.in-action-bar{
+  padding-left: 0;
+ }
+ .action-bar {
+  background-position: 100% 0%;
+  background-size:21%;
+ }
+ #id_services {
+  width: auto;
+ }
+}
